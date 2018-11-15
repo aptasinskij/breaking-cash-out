@@ -4,7 +4,7 @@ import "../platform/Named.sol";
 import "../platform/Mortal.sol";
 import "./api/ACashOutManager.sol";
 import "../platform/Component.sol";
-import "../oracles/api/ACashInOracle.sol";
+import "../oracles/api/ACashOutOracle.sol";
 import "../storages/api/ACashOutStorage.sol";
 import "../controllers/api/ACashOutController.sol";
 
