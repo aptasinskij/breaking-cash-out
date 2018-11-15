@@ -4,6 +4,7 @@ import "../platform/Named.sol";
 import "../platform/Mortal.sol";
 import "../platform/Component.sol";
 import "./api/ACashOutController.sol";
+import "../managers/api/ACashOutManager.sol";
 
 contract CashOutController is ACashOutController, Named("cash-out-controller"), Mortal, Component {
 
@@ -20,8 +21,20 @@ contract CashOutController is ACashOutController, Named("cash-out-controller"), 
         function(string memory) external _fail,
         function(string memory, uint256) external _success
     )
-        external;
+        external
     // @formatter:on
+    {
+        //TODO:implementation: check that msg.sender is registered application, validate parameters
+        ACashOutManager(context.get(MANAGER)).openCashOutChannel(
+            msg.sender, 
+            _kioskId, 
+            _toWithdraw,
+            _fees,
+            _parties,
+            _fail,
+            _success
+        );
+    }
 
     // @formatter:off
     function validateCashOutChannel(
@@ -30,8 +43,18 @@ contract CashOutController is ACashOutController, Named("cash-out-controller"), 
         function(uint256, uint256) external _fail,
         function(uint256, uint256) external _success
     )
-        external;
+        external
     // @formatter:on
+    {
+        //TODO:implementation: check that msg.sender is registered application, validate parameters
+        ACashOutManager(context.get(MANAGER)).validateCashOutChannel(
+            msg.sender,
+            _sessionId,
+            _cashOutId,
+            _fail,
+            _success
+        );
+    }
 
     // @formatter:off
     function closeCashOutChannel(
@@ -40,8 +63,18 @@ contract CashOutController is ACashOutController, Named("cash-out-controller"), 
         function(uint256, uint256) external _fail,
         function(uint256, uint256) external _success
     )
-        external;
+        external
     // @formatter:on
+    {
+        //TODO:implementation: check that msg.sender is registered application, validate parameters
+        ACashOutManager(context.get(MANAGER)).closeCashOutChannel(
+            msg.sender,
+            _sessionId,
+            _cashOutId,
+            _fail,
+            _success
+        );
+    }
 
     // @formatter:off
     function rollbackCashOutChannel(
@@ -49,8 +82,17 @@ contract CashOutController is ACashOutController, Named("cash-out-controller"), 
         function(uint256) external _fail,
         function(uint256) external _success
     )
-        external;
+        external
     // @formatter:on
+    {
+        //TODO:implementation: check that msg.sender is registered application, validate parameters
+        ACashOutManager(context.get(MANAGER)).rollbackCashOutChannel(
+            msg.sender,
+            _cashOutId,
+            _fail,
+            _success
+        );
+    }
 
     // @formatter:off
     function respondOpened(
