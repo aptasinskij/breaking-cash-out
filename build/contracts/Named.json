@@ -1,0 +1,391 @@
+{
+  "contractName": "Named",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.24;\n\ncontract Named {\n\n    string public name;\n\n    constructor(string memory _name) internal {\n        name = _name;\n    }\n\n}\n",
+  "sourcePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/platform/Named.sol",
+  "ast": {
+    "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/platform/Named.sol",
+    "exportedSymbols": {
+      "Named": [
+        3577
+      ]
+    },
+    "id": 3578,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3564,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3577,
+        "linearizedBaseContracts": [
+          3577
+        ],
+        "name": "Named",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3566,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 3577,
+            "src": "47:18:28",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 3565,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "47:6:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3575,
+              "nodeType": "Block",
+              "src": "114:29:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3573,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 3571,
+                      "name": "name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3566,
+                      "src": "124:4:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 3572,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3568,
+                      "src": "131:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "124:12:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 3574,
+                  "nodeType": "ExpressionStatement",
+                  "src": "124:12:28"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3576,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3569,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3568,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3576,
+                  "src": "84:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3567,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "84:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "83:21:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3570,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:0:28"
+            },
+            "scope": 3577,
+            "src": "72:71:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3578,
+        "src": "25:121:28"
+      }
+    ],
+    "src": "0:147:28"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/platform/Named.sol",
+    "exportedSymbols": {
+      "Named": [
+        3577
+      ]
+    },
+    "id": 3578,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3564,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3577,
+        "linearizedBaseContracts": [
+          3577
+        ],
+        "name": "Named",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3566,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 3577,
+            "src": "47:18:28",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 3565,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "47:6:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3575,
+              "nodeType": "Block",
+              "src": "114:29:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3573,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 3571,
+                      "name": "name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3566,
+                      "src": "124:4:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 3572,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3568,
+                      "src": "131:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "124:12:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 3574,
+                  "nodeType": "ExpressionStatement",
+                  "src": "124:12:28"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3576,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3569,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3568,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3576,
+                  "src": "84:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3567,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "84:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "83:21:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3570,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:0:28"
+            },
+            "scope": 3577,
+            "src": "72:71:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3578,
+        "src": "25:121:28"
+      }
+    ],
+    "src": "0:147:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-11-07T12:50:02.897Z"
+}

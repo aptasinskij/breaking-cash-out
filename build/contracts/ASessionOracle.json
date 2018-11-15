@@ -1,0 +1,572 @@
+{
+  "contractName": "ASessionOracle",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "sessionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "CloseSession",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "sessionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "onNextCloseSession",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_sessionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "successClose",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_sessionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "failClose",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.24;\n\ncontract ASessionOracle {\n\n    event CloseSession(uint256 sessionId);\n\n    function onNextCloseSession(uint256 sessionId) public;\n\n    function successClose(uint256 _sessionId) public;\n\n    function failClose(uint256 _sessionId) public;\n\n}\n",
+  "sourcePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/oracles/api/ASessionOracle.sol",
+  "ast": {
+    "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/oracles/api/ASessionOracle.sol",
+    "exportedSymbols": {
+      "ASessionOracle": [
+        3440
+      ]
+    },
+    "id": 3441,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3420,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:23"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3440,
+        "linearizedBaseContracts": [
+          3440
+        ],
+        "name": "ASessionOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3424,
+            "name": "CloseSession",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3422,
+                  "indexed": false,
+                  "name": "sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3424,
+                  "src": "75:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3421,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "75:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "74:19:23"
+            },
+            "src": "56:38:23"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3429,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "onNextCloseSession",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3427,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3426,
+                  "name": "sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3429,
+                  "src": "128:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3425,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:19:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3428,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "153:0:23"
+            },
+            "scope": 3440,
+            "src": "100:54:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3434,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "successClose",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3431,
+                  "name": "_sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3434,
+                  "src": "182:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:20:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3433,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "208:0:23"
+            },
+            "scope": 3440,
+            "src": "160:49:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3439,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "failClose",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3437,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3436,
+                  "name": "_sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3439,
+                  "src": "234:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3435,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:20:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3438,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "260:0:23"
+            },
+            "scope": 3440,
+            "src": "215:46:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3441,
+        "src": "25:239:23"
+      }
+    ],
+    "src": "0:265:23"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/oracles/api/ASessionOracle.sol",
+    "exportedSymbols": {
+      "ASessionOracle": [
+        3440
+      ]
+    },
+    "id": 3441,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3420,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:23"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3440,
+        "linearizedBaseContracts": [
+          3440
+        ],
+        "name": "ASessionOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3424,
+            "name": "CloseSession",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3422,
+                  "indexed": false,
+                  "name": "sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3424,
+                  "src": "75:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3421,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "75:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "74:19:23"
+            },
+            "src": "56:38:23"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3429,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "onNextCloseSession",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3427,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3426,
+                  "name": "sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3429,
+                  "src": "128:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3425,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:19:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3428,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "153:0:23"
+            },
+            "scope": 3440,
+            "src": "100:54:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3434,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "successClose",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3431,
+                  "name": "_sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3434,
+                  "src": "182:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:20:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3433,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "208:0:23"
+            },
+            "scope": 3440,
+            "src": "160:49:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3439,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "failClose",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3437,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3436,
+                  "name": "_sessionId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3439,
+                  "src": "234:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3435,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:20:23"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3438,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "260:0:23"
+            },
+            "scope": 3440,
+            "src": "215:46:23",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3441,
+        "src": "25:239:23"
+      }
+    ],
+    "src": "0:265:23"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-11-07T12:50:02.895Z"
+}
