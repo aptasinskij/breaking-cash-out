@@ -4,8 +4,11 @@ import "../platform/Named.sol";
 import "../platform/Mortal.sol";
 import "../platform/Component.sol";
 import "./api/ACashOutOracle.sol";
+import "../managers/api/ACashOutManager.sol";
 
 contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Component {
+
+    string constant MANAGER = "cash-out-manager";
 
     constructor(address _config) Component(_config) public {}
 
@@ -14,11 +17,11 @@ contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Comp
     }
 
     function successOpen(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmOpen
+        ACashOutManager(context.get(MANAGER)).confirmOpen(_commandId);
     }
 
     function failOpen(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmFailOpen
+        ACashOutManager(context.get(MANAGER)).confirmFailOpen(_commandId);
     }
 
     function onNextValidateCashOut(uint256 _commandId, uint256 _sessionId, uint256 _toWithdraw, uint256[] _bills) public {
@@ -26,11 +29,11 @@ contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Comp
     }
 
     function successValidate(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmValidate
+        ACashOutManager(context.get(MANAGER)).confirmValidate(_commandId);
     }
 
     function failValidate(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmFailValidate
+        ACashOutManager(context.get(MANAGER)).confirmFailValidate(_commandId);
     }
 
     function onNextCloseCashOut(uint256 _commandId, uint256 _sessionId, uint256 _toWithdraw, uint256[] _bills) public {
@@ -38,11 +41,11 @@ contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Comp
     }
 
     function successClose(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmClose
+        ACashOutManager(context.get(MANAGER)).confirmClose(_commandId);
     }
 
     function failClose(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmFailClose
+        ACashOutManager(context.get(MANAGER)).confirmFailClose(_commandId);
     }
 
     function onNextRollbackCashOut(uint256 _commandId) public {
@@ -50,11 +53,11 @@ contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Comp
     }
 
     function successRollback(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmRollback
+        ACashOutManager(context.get(MANAGER)).confirmRollback(_commandId);
     }
 
     function failRollback(uint256 _commandId) public {
-        //TODO:implementation: add call to CashOutManager::confirmFailRollback
+        ACashOutManager(context.get(MANAGER)).confirmFailRollback(_commandId);
     }
 
 }
