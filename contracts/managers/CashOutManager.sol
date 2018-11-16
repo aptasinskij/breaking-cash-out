@@ -69,7 +69,7 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
         ACashOutStorage cashOutStorage = ACashOutStorage(context.get(STORAGE));
         cashOutStorage.createValidate(_cashOutId, _sessionId, _fail, _success);
         (uint256 toWithdraw,,,,) = cashOutStorage.retrieveAccount(_cashOutId);
-        uint256[] memory bills;
+        uint256[] memory bills = new uint256[](2);
         bills[0] = 5;
         bills[1] = 20;
         ACashOutOracle(context.get(ORACLE)).onNextValidateCashOut(_cashOutId, _sessionId, toWithdraw, bills);
@@ -107,7 +107,7 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
         ACashOutStorage cashOutStorage = ACashOutStorage(context.get(STORAGE));
         cashOutStorage.createClose(_cashOutId, _sessionId, _fail, _success);
         (uint256 toWithdraw,,,,) = cashOutStorage.retrieveAccount(_cashOutId);
-        uint256[] memory bills;
+        uint256[] memory bills = new uint256[](2);
         bills[0] = 5;
         bills[1] = 20;
         ACashOutOracle(context.get(ORACLE)).onNextCloseCashOut(_cashOutId, _sessionId, toWithdraw, bills);
