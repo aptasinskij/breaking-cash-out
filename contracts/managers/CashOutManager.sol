@@ -32,7 +32,27 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
         uint256 cashOutId = cashOutStorage.createCashOut(_application);
         cashOutStorage.createOpen(cashOutId, _kioskId, _fail, _success);
         cashOutStorage.createAccount(cashOutId, _toWithdraw, 100, 5000, _fees, _parties);
-        //TODO:implementation: add call to CashOutOracle::onNextOpenCashOut
+        ACashOutOracle(context.get(ORACLE)).onNextOpenCashOut(cashOutId);
+    }
+
+    function confirmOpen(
+        uint256 _commandId
+    )
+        public
+    {
+        (string memory kioskId,,function(string memory, uint256) external success) = ACashOutStorage(context.get(STORAGE))
+            .retrieveOpen(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondOpened(kioskId, _commandId, success);
+    }
+    
+    function confirmFailOpen(
+        uint256 _commandId
+    )
+        public
+    {
+        (string memory kioskId,function(string memory) external fail,) = ACashOutStorage(context.get(STORAGE))
+            .retrieveOpen(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondFailOpen(kioskId, fail);
     }
 
     function validateCashOutChannel(
@@ -46,8 +66,31 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
     {
         //TODO:implementation: verify msg.sender is CashOutController
         //TODO:implementation: verify _application the owner of CashOut
-        ACashOutStorage(context.get(STORAGE)).createValidate(_cashOutId, _sessionId, _fail, _success);
-        //TODO:implementation: add call to CashOutOracle::onNextValidateCashOut
+        ACashOutStorage cashOutStorage = ACashOutStorage(context.get(STORAGE));
+        cashOutStorage.createValidate(_cashOutId, _sessionId, _fail, _success);
+        (uint256 toWithdraw,,,,) = cashOutStorage.retrieveAccount(_cashOutId);
+        uint256[] memory bills;
+        bills[0] = 5;
+        bills[1] = 20;
+        ACashOutOracle(context.get(ORACLE)).onNextValidateCashOut(_cashOutId, _sessionId, toWithdraw, bills);
+    }
+
+    function confirmValidate(
+        uint256 _commandId
+    )
+        public
+    {
+        (uint256 sessionId,,function(uint256, uint256) external success) = ACashOutStorage(context.get(STORAGE)).retrieveValidate(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondValidated(sessionId, _commandId, success);
+    }
+
+    function confirmFailValidate(
+        uint256 _commandId
+    )
+        public
+    {
+        (uint256 sessionId,function(uint256, uint256) external fail,) = ACashOutStorage(context.get(STORAGE)).retrieveValidate(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondValidated(sessionId, _commandId, fail);
     }
 
     function closeCashOutChannel(
@@ -61,8 +104,31 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
     {
         //TODO:implementation: verify msg.sender is CashOutController
         //TODO:implementation: verify _application the owner of CashOut
-        ACashOutStorage(context.get(STORAGE)).createClose(_cashOutId, _sessionId, _fail, _success);
-        //TODO:implementation: add call to CashOutOracle::onNextCloseCashOut
+        ACashOutStorage cashOutStorage = ACashOutStorage(context.get(STORAGE));
+        cashOutStorage.createClose(_cashOutId, _sessionId, _fail, _success);
+        (uint256 toWithdraw,,,,) = cashOutStorage.retrieveAccount(_cashOutId);
+        uint256[] memory bills;
+        bills[0] = 5;
+        bills[1] = 20;
+        ACashOutOracle(context.get(ORACLE)).onNextCloseCashOut(_cashOutId, _sessionId, toWithdraw, bills);
+    }
+
+    function confirmClose(
+        uint256 _commandId
+    )
+        public
+    {
+        (uint256 sessionId,,function(uint256, uint256) external success) = ACashOutStorage(context.get(STORAGE)).retrieveClose(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondClosed(sessionId, _commandId, success);
+    }
+
+    function confirmFailClose(
+        uint256 _commandId
+    )
+        public
+    {
+        (uint256 sessionId,function(uint256, uint256) external fail,) = ACashOutStorage(context.get(STORAGE)).retrieveClose(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondClosed(sessionId, _commandId, fail);
     }
 
     function rollbackCashOutChannel(
@@ -76,6 +142,25 @@ contract CashOutManager is ACashOutManager, Named("cash-out-manager"), Mortal, C
         //TODO:implementation: verify msg.sender is CashOutController
         //TODO:implementation: verify _application the owner of CashOut
         ACashOutStorage(context.get(STORAGE)).createRollback(_cashOutId, _fail, _success);
+        ACashOutOracle(context.get(ORACLE)).onNextRollbackCashOut(_cashOutId);
+    }
+    
+    function confirmRollback(
+        uint256 _commandId
+    )
+        public
+    {
+        (,function(uint256) external success) = ACashOutStorage(context.get(STORAGE)).retrieveRollback(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondRolledBack(_commandId, success);
+    }
+
+    function confirmFailRollback(
+        uint256 _commandId
+    )
+        public
+    {
+        (function(uint256) external fail,) = ACashOutStorage(context.get(STORAGE)).retrieveRollback(_commandId);
+        ACashOutController(context.get(CONTROLLER)).respondRolledBack(_commandId, fail);
     }
 
 }

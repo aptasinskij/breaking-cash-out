@@ -76,4 +76,47 @@ contract ACashOutStorage {
             address[] _parties
         );
 
+    function retrieveOpen(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            string memory _kioskId,
+            function(string memory) external _fail,
+            function(string memory, uint256) external _success
+        );
+
+    function retrieveValidate(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            uint256 _sessionId,
+            function(uint256, uint256) external _fail,
+            function(uint256, uint256) external _success
+        );
+
+    function retrieveClose(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            uint256 _sessionId,
+            function(uint256, uint256) external _fail,
+            function(uint256, uint256) external _success
+        );
+
+    function retrieveRollback(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            function(uint256) external _fail,
+            function(uint256) external _success
+        );
+
 }
