@@ -99,4 +99,24 @@ contract CashOutStorage is ACashOutStorage, Named("cash-out-storage"), Mortal, C
         _status = channels[_cashOutId].status;
     }
 
+    function retrieveAccount(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            uint256 _toWithdraw,
+            uint256 _VLFee,
+            uint256 _reserve,
+            uint256[] _fees,
+            address[] _parties
+        )
+    {
+        _toWithdraw = channelAccount[_cashOutId].toWithdraw;
+        _VLFee = channelAccount[_cashOutId].VLFee;
+        _reserve = channelAccount[_cashOutId].reserve;
+        _fees = channelAccount[_cashOutId].fees;
+        _parties = channelAccount[_cashOutId].parties;
+    }
+
 }

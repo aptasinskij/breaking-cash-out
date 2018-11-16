@@ -63,4 +63,17 @@ contract ACashOutStorage {
             CashOutLib.Status _status
         );
 
+    function retrieveAccount(
+        uint256 _cashOutId
+    )
+        public
+        view
+        returns (
+            uint256 _toWithdraw,
+            uint256 _VLFee,
+            uint256 _reserve,
+            uint256[] _fees,
+            address[] _parties
+        );
+
 }
