@@ -66,14 +66,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/oracles/api/ASessionOracle.sol",
     "exportedSymbols": {
       "ASessionOracle": [
-        4958
+        5220
       ]
     },
-    "id": 4959,
+    "id": 5221,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4938,
+        "id": 5200,
         "literals": [
           "solidity",
           "0.4",
@@ -88,9 +88,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4958,
+        "id": 5220,
         "linearizedBaseContracts": [
-          4958
+          5220
         ],
         "name": "ASessionOracle",
         "nodeType": "ContractDefinition",
@@ -98,20 +98,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 4942,
+            "id": 5204,
             "name": "CloseSession",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 4941,
+              "id": 5203,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4940,
+                  "id": 5202,
                   "indexed": false,
                   "name": "sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4942,
+                  "scope": 5204,
                   "src": "75:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -120,7 +120,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4939,
+                    "id": 5201,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "75:7:30",
@@ -140,7 +140,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4947,
+            "id": 5209,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -148,15 +148,15 @@
             "name": "onNextCloseSession",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4945,
+              "id": 5207,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4944,
+                  "id": 5206,
                   "name": "sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4947,
+                  "scope": 5209,
                   "src": "128:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -165,7 +165,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4943,
+                    "id": 5205,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "128:7:30",
@@ -182,12 +182,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4946,
+              "id": 5208,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "153:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "100:54:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -196,7 +196,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4952,
+            "id": 5214,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -204,15 +204,15 @@
             "name": "successClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4950,
+              "id": 5212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4949,
+                  "id": 5211,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4952,
+                  "scope": 5214,
                   "src": "182:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -221,7 +221,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4948,
+                    "id": 5210,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "182:7:30",
@@ -238,12 +238,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4951,
+              "id": 5213,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "208:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "160:49:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -252,7 +252,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4957,
+            "id": 5219,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -260,15 +260,15 @@
             "name": "failClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4955,
+              "id": 5217,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4954,
+                  "id": 5216,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4957,
+                  "scope": 5219,
                   "src": "234:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -277,7 +277,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4953,
+                    "id": 5215,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "234:7:30",
@@ -294,19 +294,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4956,
+              "id": 5218,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "260:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "215:46:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4959,
+        "scope": 5221,
         "src": "25:239:30"
       }
     ],
@@ -316,14 +316,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/oracles/api/ASessionOracle.sol",
     "exportedSymbols": {
       "ASessionOracle": [
-        4958
+        5220
       ]
     },
-    "id": 4959,
+    "id": 5221,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4938,
+        "id": 5200,
         "literals": [
           "solidity",
           "0.4",
@@ -338,9 +338,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4958,
+        "id": 5220,
         "linearizedBaseContracts": [
-          4958
+          5220
         ],
         "name": "ASessionOracle",
         "nodeType": "ContractDefinition",
@@ -348,20 +348,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 4942,
+            "id": 5204,
             "name": "CloseSession",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 4941,
+              "id": 5203,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4940,
+                  "id": 5202,
                   "indexed": false,
                   "name": "sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4942,
+                  "scope": 5204,
                   "src": "75:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -370,7 +370,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4939,
+                    "id": 5201,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "75:7:30",
@@ -390,7 +390,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4947,
+            "id": 5209,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -398,15 +398,15 @@
             "name": "onNextCloseSession",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4945,
+              "id": 5207,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4944,
+                  "id": 5206,
                   "name": "sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4947,
+                  "scope": 5209,
                   "src": "128:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -415,7 +415,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4943,
+                    "id": 5205,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "128:7:30",
@@ -432,12 +432,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4946,
+              "id": 5208,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "153:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "100:54:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -446,7 +446,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4952,
+            "id": 5214,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -454,15 +454,15 @@
             "name": "successClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4950,
+              "id": 5212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4949,
+                  "id": 5211,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4952,
+                  "scope": 5214,
                   "src": "182:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -471,7 +471,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4948,
+                    "id": 5210,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "182:7:30",
@@ -488,12 +488,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4951,
+              "id": 5213,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "208:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "160:49:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -502,7 +502,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4957,
+            "id": 5219,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -510,15 +510,15 @@
             "name": "failClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4955,
+              "id": 5217,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4954,
+                  "id": 5216,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4957,
+                  "scope": 5219,
                   "src": "234:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -527,7 +527,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4953,
+                    "id": 5215,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "234:7:30",
@@ -544,19 +544,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 4956,
+              "id": 5218,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "260:0:30"
             },
-            "scope": 4958,
+            "scope": 5220,
             "src": "215:46:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4959,
+        "scope": 5221,
         "src": "25:239:30"
       }
     ],
@@ -568,5 +568,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-16T12:27:16.880Z"
+  "updatedAt": "2018-11-16T14:01:24.291Z"
 }

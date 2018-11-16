@@ -101,14 +101,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/controllers/api/ASessionController.sol",
     "exportedSymbols": {
       "ASessionController": [
-        1983
+        2235
       ]
     },
-    "id": 1984,
+    "id": 2236,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1957,
+        "id": 2209,
         "literals": [
           "solidity",
           "0.4",
@@ -120,10 +120,10 @@
       {
         "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/controllers/api/public/SessionApi.sol",
         "file": "./public/SessionApi.sol",
-        "id": 1958,
+        "id": 2210,
         "nodeType": "ImportDirective",
-        "scope": 1984,
-        "sourceUnit": 2214,
+        "scope": 2236,
+        "sourceUnit": 2466,
         "src": "25:33:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -134,31 +134,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1959,
+              "id": 2211,
               "name": "SessionApi",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2213,
+              "referencedDeclaration": 2465,
               "src": "91:10:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SessionApi_$2213",
+                "typeIdentifier": "t_contract$_SessionApi_$2465",
                 "typeString": "contract SessionApi"
               }
             },
-            "id": 1960,
+            "id": 2212,
             "nodeType": "InheritanceSpecifier",
             "src": "91:10:10"
           }
         ],
         "contractDependencies": [
-          2213
+          2465
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1983,
+        "id": 2235,
         "linearizedBaseContracts": [
-          1983,
-          2213
+          2235,
+          2465
         ],
         "name": "ASessionController",
         "nodeType": "ContractDefinition",
@@ -166,7 +166,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1971,
+            "id": 2223,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -174,15 +174,15 @@
             "name": "respondClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1969,
+              "id": 2221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1962,
+                  "id": 2214,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1971,
+                  "scope": 2223,
                   "src": "161:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -191,7 +191,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1961,
+                    "id": 2213,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "161:7:10",
@@ -205,10 +205,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1968,
+                  "id": 2220,
                   "name": "_callback",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1971,
+                  "scope": 2223,
                   "src": "189:36:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -217,19 +217,19 @@
                     "typeString": "function (uint256) external"
                   },
                   "typeName": {
-                    "id": 1967,
+                    "id": 2219,
                     "isDeclaredConst": false,
                     "nodeType": "FunctionTypeName",
                     "parameterTypes": {
-                      "id": 1965,
+                      "id": 2217,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 1964,
+                          "id": 2216,
                           "name": "",
                           "nodeType": "VariableDeclaration",
-                          "scope": 1971,
+                          "scope": 2223,
                           "src": "198:7:10",
                           "stateVariable": false,
                           "storageLocation": "default",
@@ -238,7 +238,7 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 1963,
+                            "id": 2215,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
                             "src": "198:7:10",
@@ -255,7 +255,7 @@
                     },
                     "payable": false,
                     "returnParameterTypes": {
-                      "id": 1966,
+                      "id": 2218,
                       "nodeType": "ParameterList",
                       "parameters": [],
                       "src": "216:0:10"
@@ -276,12 +276,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1970,
+              "id": 2222,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "246:0:10"
             },
-            "scope": 1983,
+            "scope": 2235,
             "src": "130:117:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -290,7 +290,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1982,
+            "id": 2234,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -298,15 +298,15 @@
             "name": "respondFailClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1980,
+              "id": 2232,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1973,
+                  "id": 2225,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
+                  "scope": 2234,
                   "src": "329:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -315,7 +315,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1972,
+                    "id": 2224,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:10",
@@ -329,10 +329,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1979,
+                  "id": 2231,
                   "name": "_callback",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
+                  "scope": 2234,
                   "src": "357:36:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -341,19 +341,19 @@
                     "typeString": "function (uint256) external"
                   },
                   "typeName": {
-                    "id": 1978,
+                    "id": 2230,
                     "isDeclaredConst": false,
                     "nodeType": "FunctionTypeName",
                     "parameterTypes": {
-                      "id": 1976,
+                      "id": 2228,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 1975,
+                          "id": 2227,
                           "name": "",
                           "nodeType": "VariableDeclaration",
-                          "scope": 1982,
+                          "scope": 2234,
                           "src": "366:7:10",
                           "stateVariable": false,
                           "storageLocation": "default",
@@ -362,7 +362,7 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 1974,
+                            "id": 2226,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
                             "src": "366:7:10",
@@ -379,7 +379,7 @@
                     },
                     "payable": false,
                     "returnParameterTypes": {
-                      "id": 1977,
+                      "id": 2229,
                       "nodeType": "ParameterList",
                       "parameters": [],
                       "src": "384:0:10"
@@ -400,19 +400,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1981,
+              "id": 2233,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "414:0:10"
             },
-            "scope": 1983,
+            "scope": 2235,
             "src": "294:121:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1984,
+        "scope": 2236,
         "src": "60:378:10"
       }
     ],
@@ -422,14 +422,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/controllers/api/ASessionController.sol",
     "exportedSymbols": {
       "ASessionController": [
-        1983
+        2235
       ]
     },
-    "id": 1984,
+    "id": 2236,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1957,
+        "id": 2209,
         "literals": [
           "solidity",
           "0.4",
@@ -441,10 +441,10 @@
       {
         "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/controllers/api/public/SessionApi.sol",
         "file": "./public/SessionApi.sol",
-        "id": 1958,
+        "id": 2210,
         "nodeType": "ImportDirective",
-        "scope": 1984,
-        "sourceUnit": 2214,
+        "scope": 2236,
+        "sourceUnit": 2466,
         "src": "25:33:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -455,31 +455,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1959,
+              "id": 2211,
               "name": "SessionApi",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2213,
+              "referencedDeclaration": 2465,
               "src": "91:10:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SessionApi_$2213",
+                "typeIdentifier": "t_contract$_SessionApi_$2465",
                 "typeString": "contract SessionApi"
               }
             },
-            "id": 1960,
+            "id": 2212,
             "nodeType": "InheritanceSpecifier",
             "src": "91:10:10"
           }
         ],
         "contractDependencies": [
-          2213
+          2465
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1983,
+        "id": 2235,
         "linearizedBaseContracts": [
-          1983,
-          2213
+          2235,
+          2465
         ],
         "name": "ASessionController",
         "nodeType": "ContractDefinition",
@@ -487,7 +487,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1971,
+            "id": 2223,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -495,15 +495,15 @@
             "name": "respondClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1969,
+              "id": 2221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1962,
+                  "id": 2214,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1971,
+                  "scope": 2223,
                   "src": "161:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -512,7 +512,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1961,
+                    "id": 2213,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "161:7:10",
@@ -526,10 +526,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1968,
+                  "id": 2220,
                   "name": "_callback",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1971,
+                  "scope": 2223,
                   "src": "189:36:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -538,19 +538,19 @@
                     "typeString": "function (uint256) external"
                   },
                   "typeName": {
-                    "id": 1967,
+                    "id": 2219,
                     "isDeclaredConst": false,
                     "nodeType": "FunctionTypeName",
                     "parameterTypes": {
-                      "id": 1965,
+                      "id": 2217,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 1964,
+                          "id": 2216,
                           "name": "",
                           "nodeType": "VariableDeclaration",
-                          "scope": 1971,
+                          "scope": 2223,
                           "src": "198:7:10",
                           "stateVariable": false,
                           "storageLocation": "default",
@@ -559,7 +559,7 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 1963,
+                            "id": 2215,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
                             "src": "198:7:10",
@@ -576,7 +576,7 @@
                     },
                     "payable": false,
                     "returnParameterTypes": {
-                      "id": 1966,
+                      "id": 2218,
                       "nodeType": "ParameterList",
                       "parameters": [],
                       "src": "216:0:10"
@@ -597,12 +597,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1970,
+              "id": 2222,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "246:0:10"
             },
-            "scope": 1983,
+            "scope": 2235,
             "src": "130:117:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -611,7 +611,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1982,
+            "id": 2234,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -619,15 +619,15 @@
             "name": "respondFailClose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1980,
+              "id": 2232,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1973,
+                  "id": 2225,
                   "name": "_sessionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
+                  "scope": 2234,
                   "src": "329:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -636,7 +636,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1972,
+                    "id": 2224,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:7:10",
@@ -650,10 +650,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1979,
+                  "id": 2231,
                   "name": "_callback",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1982,
+                  "scope": 2234,
                   "src": "357:36:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -662,19 +662,19 @@
                     "typeString": "function (uint256) external"
                   },
                   "typeName": {
-                    "id": 1978,
+                    "id": 2230,
                     "isDeclaredConst": false,
                     "nodeType": "FunctionTypeName",
                     "parameterTypes": {
-                      "id": 1976,
+                      "id": 2228,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 1975,
+                          "id": 2227,
                           "name": "",
                           "nodeType": "VariableDeclaration",
-                          "scope": 1982,
+                          "scope": 2234,
                           "src": "366:7:10",
                           "stateVariable": false,
                           "storageLocation": "default",
@@ -683,7 +683,7 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 1974,
+                            "id": 2226,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
                             "src": "366:7:10",
@@ -700,7 +700,7 @@
                     },
                     "payable": false,
                     "returnParameterTypes": {
-                      "id": 1977,
+                      "id": 2229,
                       "nodeType": "ParameterList",
                       "parameters": [],
                       "src": "384:0:10"
@@ -721,19 +721,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1981,
+              "id": 2233,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "414:0:10"
             },
-            "scope": 1983,
+            "scope": 2235,
             "src": "294:121:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1984,
+        "scope": 2236,
         "src": "60:378:10"
       }
     ],
@@ -745,5 +745,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-16T12:27:16.844Z"
+  "updatedAt": "2018-11-16T14:01:24.261Z"
 }

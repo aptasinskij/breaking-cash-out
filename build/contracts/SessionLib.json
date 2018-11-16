@@ -11,14 +11,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/storages/libs/SessionLib.sol",
     "exportedSymbols": {
       "SessionLib": [
-        7291
+        7553
       ]
     },
-    "id": 7292,
+    "id": 7554,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7256,
+        "id": 7518,
         "literals": [
           "solidity",
           "0.4",
@@ -33,43 +33,43 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7291,
+        "id": 7553,
         "linearizedBaseContracts": [
-          7291
+          7553
         ],
         "name": "SessionLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "SessionLib.Status",
-            "id": 7262,
+            "id": 7524,
             "members": [
               {
-                "id": 7257,
+                "id": 7519,
                 "name": "CREATING",
                 "nodeType": "EnumValue",
                 "src": "64:8:48"
               },
               {
-                "id": 7258,
+                "id": 7520,
                 "name": "ACTIVE",
                 "nodeType": "EnumValue",
                 "src": "74:6:48"
               },
               {
-                "id": 7259,
+                "id": 7521,
                 "name": "FAILED_TO_CREATE",
                 "nodeType": "EnumValue",
                 "src": "82:16:48"
               },
               {
-                "id": 7260,
+                "id": 7522,
                 "name": "CLOSE_REQUESTED",
                 "nodeType": "EnumValue",
                 "src": "100:15:48"
               },
               {
-                "id": 7261,
+                "id": 7523,
                 "name": "CLOSED",
                 "nodeType": "EnumValue",
                 "src": "117:6:48"
@@ -81,14 +81,14 @@
           },
           {
             "canonicalName": "SessionLib.Session",
-            "id": 7277,
+            "id": 7539,
             "members": [
               {
                 "constant": false,
-                "id": 7264,
+                "id": 7526,
                 "name": "id",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "155:10:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -97,7 +97,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7263,
+                  "id": 7525,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:7:48",
@@ -111,10 +111,10 @@
               },
               {
                 "constant": false,
-                "id": 7266,
+                "id": 7528,
                 "name": "applicationId",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "175:21:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -123,7 +123,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7265,
+                  "id": 7527,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "175:7:48",
@@ -137,10 +137,10 @@
               },
               {
                 "constant": false,
-                "id": 7268,
+                "id": 7530,
                 "name": "kioskId",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "206:14:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -149,7 +149,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7267,
+                  "id": 7529,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:6:48",
@@ -163,10 +163,10 @@
               },
               {
                 "constant": false,
-                "id": 7270,
+                "id": 7532,
                 "name": "xToken",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "230:13:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -175,7 +175,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7269,
+                  "id": 7531,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "230:6:48",
@@ -189,26 +189,26 @@
               },
               {
                 "constant": false,
-                "id": 7272,
+                "id": 7534,
                 "name": "status",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "253:13:48",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_Status_$7262",
+                  "typeIdentifier": "t_enum$_Status_$7524",
                   "typeString": "enum SessionLib.Status"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7271,
+                  "id": 7533,
                   "name": "Status",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7262,
+                  "referencedDeclaration": 7524,
                   "src": "253:6:48",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Status_$7262",
+                    "typeIdentifier": "t_enum$_Status_$7524",
                     "typeString": "enum SessionLib.Status"
                   }
                 },
@@ -217,10 +217,10 @@
               },
               {
                 "constant": false,
-                "id": 7274,
+                "id": 7536,
                 "name": "hasActiveCashIn",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "276:20:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -229,7 +229,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 7273,
+                  "id": 7535,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "276:4:48",
@@ -243,10 +243,10 @@
               },
               {
                 "constant": false,
-                "id": 7276,
+                "id": 7538,
                 "name": "hasActiveCashOut",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "306:21:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -255,7 +255,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 7275,
+                  "id": 7537,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "306:4:48",
@@ -270,20 +270,20 @@
             ],
             "name": "Session",
             "nodeType": "StructDefinition",
-            "scope": 7291,
+            "scope": 7553,
             "src": "130:204:48",
             "visibility": "public"
           },
           {
             "canonicalName": "SessionLib.Close",
-            "id": 7290,
+            "id": 7552,
             "members": [
               {
                 "constant": false,
-                "id": 7283,
+                "id": 7545,
                 "name": "success",
                 "nodeType": "VariableDeclaration",
-                "scope": 7290,
+                "scope": 7552,
                 "src": "363:34:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -292,19 +292,19 @@
                   "typeString": "function (uint256) external"
                 },
                 "typeName": {
-                  "id": 7282,
+                  "id": 7544,
                   "isDeclaredConst": false,
                   "nodeType": "FunctionTypeName",
                   "parameterTypes": {
-                    "id": 7280,
+                    "id": 7542,
                     "nodeType": "ParameterList",
                     "parameters": [
                       {
                         "constant": false,
-                        "id": 7279,
+                        "id": 7541,
                         "name": "",
                         "nodeType": "VariableDeclaration",
-                        "scope": 7290,
+                        "scope": 7552,
                         "src": "372:7:48",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -313,7 +313,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 7278,
+                          "id": 7540,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "372:7:48",
@@ -330,7 +330,7 @@
                   },
                   "payable": false,
                   "returnParameterTypes": {
-                    "id": 7281,
+                    "id": 7543,
                     "nodeType": "ParameterList",
                     "parameters": [],
                     "src": "390:0:48"
@@ -348,10 +348,10 @@
               },
               {
                 "constant": false,
-                "id": 7289,
+                "id": 7551,
                 "name": "fail",
                 "nodeType": "VariableDeclaration",
-                "scope": 7290,
+                "scope": 7552,
                 "src": "407:31:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -360,19 +360,19 @@
                   "typeString": "function (uint256) external"
                 },
                 "typeName": {
-                  "id": 7288,
+                  "id": 7550,
                   "isDeclaredConst": false,
                   "nodeType": "FunctionTypeName",
                   "parameterTypes": {
-                    "id": 7286,
+                    "id": 7548,
                     "nodeType": "ParameterList",
                     "parameters": [
                       {
                         "constant": false,
-                        "id": 7285,
+                        "id": 7547,
                         "name": "",
                         "nodeType": "VariableDeclaration",
-                        "scope": 7290,
+                        "scope": 7552,
                         "src": "416:7:48",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -381,7 +381,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 7284,
+                          "id": 7546,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "416:7:48",
@@ -398,7 +398,7 @@
                   },
                   "payable": false,
                   "returnParameterTypes": {
-                    "id": 7287,
+                    "id": 7549,
                     "nodeType": "ParameterList",
                     "parameters": [],
                     "src": "434:0:48"
@@ -417,12 +417,12 @@
             ],
             "name": "Close",
             "nodeType": "StructDefinition",
-            "scope": 7291,
+            "scope": 7553,
             "src": "340:105:48",
             "visibility": "public"
           }
         ],
-        "scope": 7292,
+        "scope": 7554,
         "src": "25:423:48"
       }
     ],
@@ -432,14 +432,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/storages/libs/SessionLib.sol",
     "exportedSymbols": {
       "SessionLib": [
-        7291
+        7553
       ]
     },
-    "id": 7292,
+    "id": 7554,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7256,
+        "id": 7518,
         "literals": [
           "solidity",
           "0.4",
@@ -454,43 +454,43 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7291,
+        "id": 7553,
         "linearizedBaseContracts": [
-          7291
+          7553
         ],
         "name": "SessionLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "SessionLib.Status",
-            "id": 7262,
+            "id": 7524,
             "members": [
               {
-                "id": 7257,
+                "id": 7519,
                 "name": "CREATING",
                 "nodeType": "EnumValue",
                 "src": "64:8:48"
               },
               {
-                "id": 7258,
+                "id": 7520,
                 "name": "ACTIVE",
                 "nodeType": "EnumValue",
                 "src": "74:6:48"
               },
               {
-                "id": 7259,
+                "id": 7521,
                 "name": "FAILED_TO_CREATE",
                 "nodeType": "EnumValue",
                 "src": "82:16:48"
               },
               {
-                "id": 7260,
+                "id": 7522,
                 "name": "CLOSE_REQUESTED",
                 "nodeType": "EnumValue",
                 "src": "100:15:48"
               },
               {
-                "id": 7261,
+                "id": 7523,
                 "name": "CLOSED",
                 "nodeType": "EnumValue",
                 "src": "117:6:48"
@@ -502,14 +502,14 @@
           },
           {
             "canonicalName": "SessionLib.Session",
-            "id": 7277,
+            "id": 7539,
             "members": [
               {
                 "constant": false,
-                "id": 7264,
+                "id": 7526,
                 "name": "id",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "155:10:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -518,7 +518,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7263,
+                  "id": 7525,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:7:48",
@@ -532,10 +532,10 @@
               },
               {
                 "constant": false,
-                "id": 7266,
+                "id": 7528,
                 "name": "applicationId",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "175:21:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -544,7 +544,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7265,
+                  "id": 7527,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "175:7:48",
@@ -558,10 +558,10 @@
               },
               {
                 "constant": false,
-                "id": 7268,
+                "id": 7530,
                 "name": "kioskId",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "206:14:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -570,7 +570,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7267,
+                  "id": 7529,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:6:48",
@@ -584,10 +584,10 @@
               },
               {
                 "constant": false,
-                "id": 7270,
+                "id": 7532,
                 "name": "xToken",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "230:13:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -596,7 +596,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7269,
+                  "id": 7531,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "230:6:48",
@@ -610,26 +610,26 @@
               },
               {
                 "constant": false,
-                "id": 7272,
+                "id": 7534,
                 "name": "status",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "253:13:48",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_Status_$7262",
+                  "typeIdentifier": "t_enum$_Status_$7524",
                   "typeString": "enum SessionLib.Status"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7271,
+                  "id": 7533,
                   "name": "Status",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7262,
+                  "referencedDeclaration": 7524,
                   "src": "253:6:48",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Status_$7262",
+                    "typeIdentifier": "t_enum$_Status_$7524",
                     "typeString": "enum SessionLib.Status"
                   }
                 },
@@ -638,10 +638,10 @@
               },
               {
                 "constant": false,
-                "id": 7274,
+                "id": 7536,
                 "name": "hasActiveCashIn",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "276:20:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -650,7 +650,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 7273,
+                  "id": 7535,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "276:4:48",
@@ -664,10 +664,10 @@
               },
               {
                 "constant": false,
-                "id": 7276,
+                "id": 7538,
                 "name": "hasActiveCashOut",
                 "nodeType": "VariableDeclaration",
-                "scope": 7277,
+                "scope": 7539,
                 "src": "306:21:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -676,7 +676,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 7275,
+                  "id": 7537,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "306:4:48",
@@ -691,20 +691,20 @@
             ],
             "name": "Session",
             "nodeType": "StructDefinition",
-            "scope": 7291,
+            "scope": 7553,
             "src": "130:204:48",
             "visibility": "public"
           },
           {
             "canonicalName": "SessionLib.Close",
-            "id": 7290,
+            "id": 7552,
             "members": [
               {
                 "constant": false,
-                "id": 7283,
+                "id": 7545,
                 "name": "success",
                 "nodeType": "VariableDeclaration",
-                "scope": 7290,
+                "scope": 7552,
                 "src": "363:34:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -713,19 +713,19 @@
                   "typeString": "function (uint256) external"
                 },
                 "typeName": {
-                  "id": 7282,
+                  "id": 7544,
                   "isDeclaredConst": false,
                   "nodeType": "FunctionTypeName",
                   "parameterTypes": {
-                    "id": 7280,
+                    "id": 7542,
                     "nodeType": "ParameterList",
                     "parameters": [
                       {
                         "constant": false,
-                        "id": 7279,
+                        "id": 7541,
                         "name": "",
                         "nodeType": "VariableDeclaration",
-                        "scope": 7290,
+                        "scope": 7552,
                         "src": "372:7:48",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -734,7 +734,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 7278,
+                          "id": 7540,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "372:7:48",
@@ -751,7 +751,7 @@
                   },
                   "payable": false,
                   "returnParameterTypes": {
-                    "id": 7281,
+                    "id": 7543,
                     "nodeType": "ParameterList",
                     "parameters": [],
                     "src": "390:0:48"
@@ -769,10 +769,10 @@
               },
               {
                 "constant": false,
-                "id": 7289,
+                "id": 7551,
                 "name": "fail",
                 "nodeType": "VariableDeclaration",
-                "scope": 7290,
+                "scope": 7552,
                 "src": "407:31:48",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -781,19 +781,19 @@
                   "typeString": "function (uint256) external"
                 },
                 "typeName": {
-                  "id": 7288,
+                  "id": 7550,
                   "isDeclaredConst": false,
                   "nodeType": "FunctionTypeName",
                   "parameterTypes": {
-                    "id": 7286,
+                    "id": 7548,
                     "nodeType": "ParameterList",
                     "parameters": [
                       {
                         "constant": false,
-                        "id": 7285,
+                        "id": 7547,
                         "name": "",
                         "nodeType": "VariableDeclaration",
-                        "scope": 7290,
+                        "scope": 7552,
                         "src": "416:7:48",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -802,7 +802,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 7284,
+                          "id": 7546,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "416:7:48",
@@ -819,7 +819,7 @@
                   },
                   "payable": false,
                   "returnParameterTypes": {
-                    "id": 7287,
+                    "id": 7549,
                     "nodeType": "ParameterList",
                     "parameters": [],
                     "src": "434:0:48"
@@ -838,12 +838,12 @@
             ],
             "name": "Close",
             "nodeType": "StructDefinition",
-            "scope": 7291,
+            "scope": 7553,
             "src": "340:105:48",
             "visibility": "public"
           }
         ],
-        "scope": 7292,
+        "scope": 7554,
         "src": "25:423:48"
       }
     ],
@@ -857,10 +857,10 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0xb529f14aa8096f943177c09ca294ad66d2e08b1f",
-      "transactionHash": "0x20f34a6bf0177e82b57dac4229a0f32b0f1b8c1fc32aee2f61081763957573a2"
+      "address": "0xbab15d629b84e2c9575da294ab24b227e15fa02f",
+      "transactionHash": "0xbf30c54b8ece283c7cd339f8a8751e488f63963e04ac9c5b6bed10a217dbdf86"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-16T12:27:20.885Z"
+  "updatedAt": "2018-11-16T14:01:27.584Z"
 }
