@@ -6,7 +6,7 @@ import "../platform/Component.sol";
 import "./api/ACashOutOracle.sol";
 import "../managers/api/ACashOutManager.sol";
 
-contract CashOutOralce is ACashOutOracle, Named("cash-out-oracle"), Mortal, Component {
+contract CashOutOracle is ACashOutOracle, Named("cash-out-oracle"), Mortal, Component {
 
     string constant MANAGER = "cash-out-manager";
 
