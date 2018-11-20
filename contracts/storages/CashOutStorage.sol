@@ -31,13 +31,14 @@ contract CashOutStorage is ACashOutStorage, Named("cash-out-storage"), Mortal, C
 
     function createOpen(
         uint256 _cashOutId,
+        string _requestId,
         string _kioskId,
-        function(string memory) external _fail,
-        function(string memory, uint256) external _success
+        function(string memory, string memory) external _fail,
+        function(string memory, string memory, uint256, uint256) external _success
     )
         public
     {
-        channelOpen[_cashOutId] = CashOutLib.Open(_kioskId, _fail, _success);
+        channelOpen[_cashOutId] = CashOutLib.Open(_requestId, _kioskId, _fail, _success);
     }
 
     function createAccount(
@@ -125,11 +126,13 @@ contract CashOutStorage is ACashOutStorage, Named("cash-out-storage"), Mortal, C
         public
         view
         returns (
+            string memory _requestId,
             string memory _kioskId,
-            function(string memory) external _fail,
-            function(string memory, uint256) external _success
+            function(string memory, string memory) external _fail,
+            function(string memory, string memory, uint256, uint256) external _success
         )
     {
+        _requestId = channelOpen[_cashOutId].requestId;
         _kioskId = channelOpen[_cashOutId].kioskId;
         _fail = channelOpen[_cashOutId].fail;
         _success = channelOpen[_cashOutId].success;

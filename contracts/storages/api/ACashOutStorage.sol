@@ -14,9 +14,10 @@ contract ACashOutStorage {
 
     function createOpen(
         uint256 _cashOutId,
+        string _requestId,
         string _kioskId,
-        function(string memory) external _fail,
-        function(string memory, uint256) external _success
+        function(string memory, string memory) external _fail,
+        function(string memory, string memory, uint256, uint256) external _success
     )
         public;
 
@@ -82,9 +83,10 @@ contract ACashOutStorage {
         public
         view
         returns (
+            string memory _requestId,
             string memory _kioskId,
-            function(string memory) external _fail,
-            function(string memory, uint256) external _success
+            function(string memory, string memory) external _fail,
+            function(string memory, string memory, uint256, uint256) external _success
         );
 
     function retrieveValidate(
