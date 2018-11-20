@@ -55,14 +55,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/platform/Config.sol",
     "exportedSymbols": {
       "Config": [
-        5285
+        5404
       ]
     },
-    "id": 5286,
+    "id": 5405,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5264,
+        "id": 5383,
         "literals": [
           "solidity",
           "0.4",
@@ -77,19 +77,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5285,
+        "id": 5404,
         "linearizedBaseContracts": [
-          5285
+          5404
         ],
         "name": "Config",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 5266,
+            "id": 5385,
             "name": "context",
             "nodeType": "VariableDeclaration",
-            "scope": 5285,
+            "scope": 5404,
             "src": "48:22:32",
             "stateVariable": true,
             "storageLocation": "default",
@@ -98,7 +98,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 5265,
+              "id": 5384,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "48:7:32",
@@ -112,10 +112,10 @@
           },
           {
             "constant": false,
-            "id": 5268,
+            "id": 5387,
             "name": "database",
             "nodeType": "VariableDeclaration",
-            "scope": 5285,
+            "scope": 5404,
             "src": "76:23:32",
             "stateVariable": true,
             "storageLocation": "default",
@@ -124,7 +124,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 5267,
+              "id": 5386,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "76:7:32",
@@ -138,25 +138,25 @@
           },
           {
             "body": {
-              "id": 5283,
+              "id": 5402,
               "nodeType": "Block",
               "src": "162:65:32",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5277,
+                    "id": 5396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5275,
+                      "id": 5394,
                       "name": "context",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5266,
+                      "referencedDeclaration": 5385,
                       "src": "172:7:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -167,11 +167,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5276,
+                      "id": 5395,
                       "name": "_context",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5270,
+                      "referencedDeclaration": 5389,
                       "src": "182:8:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -184,25 +184,25 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 5278,
+                  "id": 5397,
                   "nodeType": "ExpressionStatement",
                   "src": "172:18:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5281,
+                    "id": 5400,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5279,
+                      "id": 5398,
                       "name": "database",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5268,
+                      "referencedDeclaration": 5387,
                       "src": "200:8:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -213,11 +213,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5280,
+                      "id": 5399,
                       "name": "_database",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5272,
+                      "referencedDeclaration": 5391,
                       "src": "211:9:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -230,14 +230,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 5282,
+                  "id": 5401,
                   "nodeType": "ExpressionStatement",
                   "src": "200:20:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 5284,
+            "id": 5403,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -245,15 +245,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5273,
+              "id": 5392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5270,
+                  "id": 5389,
                   "name": "_context",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5284,
+                  "scope": 5403,
                   "src": "118:16:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -262,7 +262,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5269,
+                    "id": 5388,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "118:7:32",
@@ -276,10 +276,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5272,
+                  "id": 5391,
                   "name": "_database",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5284,
+                  "scope": 5403,
                   "src": "136:17:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -288,7 +288,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5271,
+                    "id": 5390,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "136:7:32",
@@ -305,19 +305,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5274,
+              "id": 5393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "162:0:32"
             },
-            "scope": 5285,
+            "scope": 5404,
             "src": "106:121:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5286,
+        "scope": 5405,
         "src": "25:205:32"
       }
     ],
@@ -327,14 +327,14 @@
     "absolutePath": "/home/andrew/Desktop/solidity-experiments/callback-cash-in/contracts/platform/Config.sol",
     "exportedSymbols": {
       "Config": [
-        5285
+        5404
       ]
     },
-    "id": 5286,
+    "id": 5405,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5264,
+        "id": 5383,
         "literals": [
           "solidity",
           "0.4",
@@ -349,19 +349,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5285,
+        "id": 5404,
         "linearizedBaseContracts": [
-          5285
+          5404
         ],
         "name": "Config",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 5266,
+            "id": 5385,
             "name": "context",
             "nodeType": "VariableDeclaration",
-            "scope": 5285,
+            "scope": 5404,
             "src": "48:22:32",
             "stateVariable": true,
             "storageLocation": "default",
@@ -370,7 +370,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 5265,
+              "id": 5384,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "48:7:32",
@@ -384,10 +384,10 @@
           },
           {
             "constant": false,
-            "id": 5268,
+            "id": 5387,
             "name": "database",
             "nodeType": "VariableDeclaration",
-            "scope": 5285,
+            "scope": 5404,
             "src": "76:23:32",
             "stateVariable": true,
             "storageLocation": "default",
@@ -396,7 +396,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 5267,
+              "id": 5386,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "76:7:32",
@@ -410,25 +410,25 @@
           },
           {
             "body": {
-              "id": 5283,
+              "id": 5402,
               "nodeType": "Block",
               "src": "162:65:32",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5277,
+                    "id": 5396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5275,
+                      "id": 5394,
                       "name": "context",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5266,
+                      "referencedDeclaration": 5385,
                       "src": "172:7:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -439,11 +439,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5276,
+                      "id": 5395,
                       "name": "_context",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5270,
+                      "referencedDeclaration": 5389,
                       "src": "182:8:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -456,25 +456,25 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 5278,
+                  "id": 5397,
                   "nodeType": "ExpressionStatement",
                   "src": "172:18:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5281,
+                    "id": 5400,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5279,
+                      "id": 5398,
                       "name": "database",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5268,
+                      "referencedDeclaration": 5387,
                       "src": "200:8:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -485,11 +485,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 5280,
+                      "id": 5399,
                       "name": "_database",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5272,
+                      "referencedDeclaration": 5391,
                       "src": "211:9:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -502,14 +502,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 5282,
+                  "id": 5401,
                   "nodeType": "ExpressionStatement",
                   "src": "200:20:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 5284,
+            "id": 5403,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -517,15 +517,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5273,
+              "id": 5392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5270,
+                  "id": 5389,
                   "name": "_context",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5284,
+                  "scope": 5403,
                   "src": "118:16:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -534,7 +534,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5269,
+                    "id": 5388,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "118:7:32",
@@ -548,10 +548,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5272,
+                  "id": 5391,
                   "name": "_database",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5284,
+                  "scope": 5403,
                   "src": "136:17:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -560,7 +560,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5271,
+                    "id": 5390,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "136:7:32",
@@ -577,19 +577,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5274,
+              "id": 5393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "162:0:32"
             },
-            "scope": 5285,
+            "scope": 5404,
             "src": "106:121:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5286,
+        "scope": 5405,
         "src": "25:205:32"
       }
     ],
@@ -603,10 +603,10 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x5ca9f95992eb68163efdf8bf751e813f2c53c450",
-      "transactionHash": "0x59bd746e33fc09705a6ef33deb1afcb99e4d693cd56acdf835f53c1b330458d1"
+      "address": "0x2c2b9c9a4a25e24b174f26114e8926a9f2128fe4",
+      "transactionHash": "0xca9b2d19bb5d48d7f3c34b8e4adb34bf00733ab0a6e880d7768940db153938f7"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-16T14:01:28.312Z"
+  "updatedAt": "2018-11-20T08:19:54.824Z"
 }
